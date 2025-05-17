@@ -1,0 +1,84 @@
+a {
+  text-decoration: none;
+}
+
+#imgicon {
+  width: 170px;
+  height: 90px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+.card-list {
+  list-style: none;
+  padding: 0;
+}
+.card-list li {
+  padding: 8px 0;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.card-list li:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.email-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+}
+.email-button:hover {
+  background-color: #0056b3;
+}
+.email-button:active {
+  transform: scale(0.95);
+}
+.clicked {
+  animation: clickEffect 0.4s ease;
+}
+@keyframes clickEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

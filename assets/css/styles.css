@@ -1,0 +1,221 @@
+/* Reset default padding, margin, and box-sizing for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nokora", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Smooth scroll for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Layout for .full-content-img */
+.full-content-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.full-content-img img {
+  width: 100%;
+  max-width: 800px; /* Larger for full content visibility */
+  height: auto; /* Preserve aspect ratio */
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0.9;
+  will-change: transform, opacity;
+  border-radius: 8px; /* Aesthetic rounding */
+}
+
+/* Hover effect for images */
+.full-content-img img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for headings, paragraphs, and spans */
+h3,
+p,
+span,
+ul,
+.full-content-img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Apply fade-in animation when elements are in view */
+h3,
+p,
+span,
+ul,
+.full-content-img.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Apply fade-in animation to text with a slight delay */
+span {
+  animation: fadeInText 1s ease-in-out;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sticky navbar at the top */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* Media Queries for improved responsiveness */
+@media (max-width: 576px) {
+  /* Mobile devices (portrait) */
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .full-content-img img {
+    max-width: 100%; /* Full width on small screens */
+    min-width: 280px; /* Minimum width for tiny screens */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Small devices (landscape phones) */
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Medium devices (tablets) */
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 2rem 0;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer p,
+footer a {
+  font-size: 1rem;
+  color: #b8b8b8;
+  line-height: 1.6;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .col-xl-4 {
+  flex-basis: 30%;
+}
+
+footer .list-unstyled {
+  padding-left: 0;
+}
+
+footer .list-unstyled li a {
+  list-style: none;
+  text-decoration: none;
+}
+
+footer .list-unstyled li {
+  margin-bottom: 10px;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Contact Section */
+footer .col-xl-4 p {
+  font-size: 1rem;
+  color: #b8b8b8;
+  transition: color 0.3s ease;
+}
+
+footer .col-xl-4 p:hover {
+  color: #ffd700;
+}
+
+/* Footer Social Links */
+footer .social-icons a {
+  margin: 0 10px;
+  color: #b8b8b8;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+/* Improve visibility of text on hover */
+footer .list-unstyled a {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #b8b8b8;
+  transition: color 0.3s ease;
+}
+
+footer .list-unstyled a:hover {
+  color: #ffd700;
+  transform: scale(1.05);
+}

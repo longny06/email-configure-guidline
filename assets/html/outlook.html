@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Guideline</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nokora:wght@100;300;400;700;900&family=Noto+Sans+Khmer:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Nokora", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        width: 100%;
+      }
+      @media (max-width: 576px) {
+        h1 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body>
+    <header
+      class="bg-primary text-white text-center py-3"
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+      "
+    >
+      <ul style="list-style: none; margin: 0; padding: 0">
+        <li>
+          <h1 style="margin: 0">User Guideline</h1>
+        </li>
+      </ul>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Mozilla Thunderbird</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Microsoft Outlook</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gmailguideline.html"
+                >Google Mail Send As</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+          </ul>
+          <ul></ul>
+          <ul></ul>
+          <ul>
+            <img
+              style="
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 35%;
+                margin-top: 7px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              "
+              src="../../images/outlook.png"
+              alt="Outlook Icon"
+            />
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container w-75 mt-4">
+      <section id="thunderbird-setup" class="mb-4 p-4 border rounded bg-light">
+        <div class="section-install margin-width">
+          <section class="link-mt">
+            <a href="">Home /</a> <a href="">Outlook /</a>
+            <a href="">Installation and Updates /</a>
+            <p>How to install Outlook on Windows</p>
+          </section>
+          <section class="main-mt"></section>
+          <section class="header-mt">
+            <h2>How to download and install Outlook on Windows</h2>
+            <p style="font-size: 1.5rem; padding: 1rem 0">
+              (Redirected from
+              <span
+                style="
+                  color: #0509ff;
+                  text-decoration: underline;
+                  cursor: pointer;
+                "
+                >How to download and install Outlook on Windows</span
+              >)
+            </p>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                border-bottom: 1px solid black;
+                padding: 2rem 0;
+              "
+            >
+              <p style="font-weight: bold">Outlook</p>
+              <p style="font-weight: bold">
+                <i class="fa-solid fa-pencil"></i> Last updated:
+                <span id="dateDisplay"></span>
+              </p>
+              <p style="font-weight: bold">
+                <span><i class="fa-solid fa-thumbs-up"></i></span> 55%
+              </p>
+              <p>of users voted this helpful</p>
+            </div>
+          </section>
+          <section class="install-thunder">
+            <p style="color: #808080c5">To Install Outlook on your computer</p>
+            <div class="list-ins">
+              <p>
+                1. Visit
+                <a
+                  href="https://apps.microsoft.com/detail/9nrx63209r7b?hl=en-US&gl=US"
+                  style="color: #0509ff; text-decoration: underline"
+                  >this Outlook download page</a
+                >
+                in any browser, such as Microsoft Edge
+              </p>
+              <p>
+                2. Click the
+                <button class="btn btn-outline-primary">Download</button>
+                button. The Outlook Installer that downloads will automatically
+                offer you the best available version of Outlook for your
+                Computer.
+              </p>
+              <img src="../../images/downloadOutlook.png" alt="Download Button" />
+              <p class="mt-5">
+                3. Click Open file in the Downloads notification on Microsoft
+                Edge to start the process.
+              </p>
+              <img src="../../images/openFile.png" alt="Open File Prompt" />
+              <p class="mt-5">
+                4. In other browsers, you may need to first save the Outlook
+                installer to your computer, then open the file you <br />
+                , Just waiting the updates...
+              </p>
+
+              <p class="mt-5">
+                5. Click Update Button and wait the process again.
+              </p>
+              <img src="../../images/ClickUp.png" alt="Update Button" />
+              <p class="mt-5">
+                6. Choose your Microsoft or your Gmail Account if you have, but
+                you don't have acc you can click
+                <a
+                  href="https://signup.live.com/?lic=1"
+                  style="color: #0509ff; text-decoration: underline"
+                  >Create an Outlook.com email account</a
+                >
+                and <br />
+                click continue button
+              </p>
+              <img src="../../images/chooseemail.png" alt="Set Email Account" />
+              <div class="row mt-5">
+                <div class="col-lg-12">
+                  After lick next button please enter Password :
+                </div>
+                <div class="col-lg-12">
+                  And Enter First Name and Last ...
+                  <img src="/images/SetName.png" alt="Set Username" />
+                </div>
+              </div>
+              <p>7. And waiting for your account email provider</p>
+
+                8.So, Your Setup is success, Any Question you keep yourselt.
+              <!-- <p class="mt-5"> -->
+              <img src="../../images/outlookSuccess.png" alt="Setup Complete" />
+              <p class="mt-5">
+                9. ALso you can open file word and share to your friend or your
+                family...
+              </p>
+              <img src="../../images/word.png" alt="Word Document" />
+              <img src="../../images/power.png" alt="PowerPoint" />
+              <p class="mt-4">
+                The page lists various Microsoft 365 applications, including
+                Word, Excel, PowerPoint, OneDrive, Outlook, Teams, and
+                Clipchamp, with brief descriptions of their functionalities.
+                Additional apps such as Calendar, Designer, Editor, Forms,
+                Lists, Loop, Microsoft Defender, OneNote, People, Power
+                Automate, Reading Coach, Sway, and To Do are also featured under
+                the "More from Microsoft 365" section, each with a short
+                description of their purpose. The interface includes options to
+                "Install apps" and a "Buy Microsoft 365" button.
+                <p class="mt-4"></p>
+                <img src="../../images/allfeature.png" alt="Microsoft 365 Options" />
+              </p>
+            </div>
+            <section class="list-Problem mt-5">
+              <h4 style="font-style: normal; font-size: 3rem">
+                Having problems?
+              </h4>
+              <p class="p-problem">Here are some articles that can help you:</p>
+              <ul class="list-hav">
+                <li class="list-link-hav">
+                  <a href="">Windows in S mode won't let me install Outlook</a>
+                </li>
+                <li class="list-link-hav">
+                  <a href="">Make Outlook your default browser on windows</a>
+                </li>
+                <li class="list-link-hav">
+                  <a href="">Make Outlook your default browser</a>
+                </li>
+                <li class="list-link-hav">
+                  <a href="">Outlook won't start - find solutions</a>
+                </li>
+                <li class="list-link-hav">
+                  <a href="">Troubleshoot and diagnose Outlook problems</a>
+                </li>
+                <li class="list-link-hav">
+                  <a href=""
+                    >Why do i get a harmful download message when downloading
+                    Outlook on Windows?</a
+                  >
+                </li>
+              </ul>
+              <p class="p-problem">
+                If you need more help, you can always get community support.
+              </p>
+              <p>
+                Share this article:
+                <a href="https://t.me/znintadaa" style="color: #0509ff"
+                  >Thai Longny</a
+                >
+              </p>
+            </section>
+          </section>
+        </div>
+      </section>
+    </main>
+    <div class="container-fluid p-0 m-0">
+      <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #000000"
+      >
+        <div class="container p-4 pb-0">
+          <section class="">
+            <div class="row">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  My UserGuideline
+                </h6>
+                <p>
+                  Welcome to My Website Guideline! Here, you'll find everything
+                  you need to understand and navigate this website with ease.
+                  Explore step-by-step instructions, helpful tips, and answers
+                  to common questions to make the most of your experience.
+                </p>
+              </div>
+              <hr class="w-100 clearfix d-md-none" />
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <p>
+                  <a class="text-white" href="index.html"
+                    >Mozilla Thunderbird</a
+                  >
+                </p>
+                <p>
+                  <a class="text-white" href="assets/html/outlook.html"
+                    >Ms Outlook</a
+                  >
+                </p>
+                <p>
+                  <a class="text-white" href="assets/html/gmailguideline.html"
+                    >Google Mail Send As</a
+                  >
+                </p>
+              </div>
+              <hr class="w-100 clearfix d-md-none" />
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  Useful links
+                </h6>
+                <p>
+                  <a class="text-white" href="index.html"
+                    >How to set up Mozilla?</a
+                  >
+                </p>
+                <p>
+                  <a class="text-white" href="assets/html/outlook.html"
+                    >How to set up Outlook?</a
+                  >
+                </p>
+                <p>
+                  <a class="text-white" href="assets/html/gmailguideline.html"
+                    >How to set up Google Mail send As?</a
+                  >
+                </p>
+                <p>
+                  <a class="text-white" href="#help">Help</a>
+                </p>
+              </div>
+              <hr class="w-100 clearfix d-md-none" />
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p>
+                  <i class="fas fa-home mr-3"></i> Phnom Peng, Russian Blvd,
+                  Cambodia
+                </p>
+                <p><i class="fas fa-envelope mr-3"></i> longnythai@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+            </div>
+          </section>
+          <hr class="my-3" />
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <div class="p-3">
+                  © 2025 Copyright:
+                  <a class="text-white" href="#">welcome.com</a>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-floating m-1"
+                  class="text-white"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("h3, p, ul, .image-step");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+  });
+
+  const today = new Date();
+
+  const day = String(today.getDate()).padStart(2, "0");
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const year = String(today.getFullYear()).slice(-2);
+
+  const formattedDate = `${day}-${month}-${year}`;
+
+  console.log("Today is:", formattedDate);
+  document.getElementById("dateDisplay").textContent = formattedDate;
+</script>

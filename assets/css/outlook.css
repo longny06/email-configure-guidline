@@ -1,0 +1,372 @@
+/* General Reset and Base Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nokora", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #0509ff;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff6200;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header Styles */
+header {
+  background-color: #0d6efd;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+/* Navigation Styles */
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #495057;
+  border-radius: 5px;
+}
+
+.navbar img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Main Content Styles */
+main.container {
+  max-width: 75%;
+  margin: 2rem auto;
+}
+
+section#thunderbird-setup {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumb Navigation */
+.section-install .link-mt {
+  margin-bottom: 1.5rem;
+}
+
+.link-mt a {
+  color: #0509ff;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.link-mt p {
+  display: inline;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Main Section Layout */
+.main-mt {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.main-mt .image-mt img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.btn-down {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-down .btn {
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-down .btn:hover {
+  background-color: #005cbf;
+}
+
+.btn-down nav p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.btn-down nav p:hover {
+  color: #0509ff;
+}
+
+/* Header Section */
+.header-mt h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+
+.header-mt p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* Installation Steps */
+.install-thunder p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+
+.install-thunder img {
+  max-width: 600px;
+  margin: 1rem 0;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.install-thunder button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.install-thunder button:hover {
+  background-color: #005cbf;
+}
+
+/* Problem Section */
+.list-Problem h4 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 1.5rem;
+}
+
+.list-Problem .p-problem {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.list-hav {
+  list-style: none;
+  padding: 0;
+}
+
+.list-hav li {
+  margin-bottom: 0.75rem;
+}
+
+.list-hav li a {
+  font-size: 1rem;
+  color: #0509ff;
+}
+
+.list-hav li a:hover {
+  color: #ff6200;
+}
+
+/* Volunteer Section */
+.volun-dis {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.volun-dis .image-volun img {
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.volun-script h3 {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+}
+
+.volun-script p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.volun-script a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Related Articles */
+.article-choose {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card-artical {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.card-artical span {
+  color: #0d6efd;
+}
+
+.card-artical p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.card-artical p:first-of-type {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #343a40;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 2rem 0;
+}
+
+footer h6 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+footer p,
+footer a {
+  font-size: 0.9rem;
+  color: #adb5bd;
+  margin-bottom: 0.5rem;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+footer .btn-floating {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #adb5bd;
+  margin: 0.5rem;
+}
+
+footer .btn-floating:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Animation for Fade-In Effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-mt {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .install-thunder img {
+    max-width: 100%;
+  }
+
+  .article-choose {
+    flex-direction: column;
+  }
+
+  .volun-dis {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-mt {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
